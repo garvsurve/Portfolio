@@ -38,7 +38,7 @@ export default function Hero() {
 
           <p className="text-xl md:text-2xl font-bold max-w-xl leading-relaxed border-l-8 border-neo-ink pl-6 py-2">
             I craft <span className="bg-neo-muted px-1">robust backends</span> and <span className="bg-neo-secondary px-1">vibrant frontends</span>. 
-            Full-stack engineer specializing in Java Spring Boot and React.
+            Full-stack engineer specializing in Java Spring Boot.
           </p>
 
           <div className="flex flex-wrap gap-6 pt-4">

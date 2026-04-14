@@ -42,8 +42,8 @@ h6 {
 /* ─── Custom Utilities ───────────────────────────────── */
 @layer utilities {
   .bg-halftone {
-    background-image: radial-gradient(#000 1.0px, transparent 0.8px);
-    background-size: 20px 20px;
+    background-image: radial-gradient(rgba(0, 0, 0, 0.15) 0.8px, transparent 0.7px);
+    background-size: 12px 12px;
   }
 
   .bg-grid {

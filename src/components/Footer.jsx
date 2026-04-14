@@ -70,7 +70,7 @@ export default function Footer() {
             </span>
             <Heart size={16} fill="white" className="animate-pulse" />
             <span className="font-black text-xs uppercase tracking-widest">
-              and React
+              and Passion
             </span>
           </div>
         </div>

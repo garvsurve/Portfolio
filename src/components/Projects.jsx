@@ -5,7 +5,7 @@ const PROJECTS = [
     title: 'SkillSphere',
     subtitle: 'P2P Skill Exchange Platform',
     description:
-      'A full-stack platform using Java Spring Boot and React. Built features for skill management, session scheduling, and secure JWT authentication. Engineered for efficient data flow and high scalability.',
+      'A full-stack peer-to-peer skill exchange platform using Java Spring Boot and React. Built features for skill management, session scheduling, and secure JWT authentication. Engineered for efficient data flow and high scalability.',
     tags: ['Java', 'Spring Boot', 'React', 'JWT', 'PostgreSQL'],
     color: 'bg-neo-secondary',
     github: 'https://github.com/garvsurve/SkillSphere',
