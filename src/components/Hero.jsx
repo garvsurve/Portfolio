@@ -69,8 +69,8 @@ export default function Hero() {
         <div className="lg:col-span-5 relative flex justify-center lg:justify-end">
           <div className="relative group">
             {/* The "Main" Image Container */}
-            <div className="relative w-72 h-96 md:w-80 md:h-[450px] bg-neo-white border-8 border-black shadow-neo-xl rotate-3 group-hover:rotate-0 transition-all duration-300 overflow-hidden flex items-center justify-center text-8xl grayscale hover:grayscale-0">
-               👨‍💻
+            <div className="relative w-72 h-96 md:w-80 md:h-[450px] bg-neo-white border-8 border-black shadow-neo-xl rotate-3 group-hover:rotate-0 transition-all duration-300 overflow-hidden grayscale hover:grayscale-0">
+              <img src="/avatar.jpg" alt="Garv Surve" className="w-full h-full object-cover" />
             </div>
 
             {/* Overlapping Stickers */}
