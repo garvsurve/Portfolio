@@ -2,7 +2,7 @@ import { Coffee, Rocket, Trophy, Zap } from 'lucide-react';
 
 const stats = [
   { value: '75', label: 'GFG University Rank', icon: <Trophy className="text-neo-ink" />, color: 'bg-neo-secondary' },
-  { value: '1500+', label: 'LeetCode', icon: <Zap className="text-neo-ink" />, color: 'bg-neo-accent' },
+  { value: '1500+', label: 'LeetCode Rating', icon: <Zap className="text-neo-ink" />, color: 'bg-neo-accent' },
 ];
 
 export default function About() {
