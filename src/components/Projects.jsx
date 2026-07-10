@@ -3,12 +3,13 @@ import { ExternalLink, Github, Code, Layout } from 'lucide-react';
 const PROJECTS = [
   {
     title: 'SkillSphere',
-    subtitle: 'P2P Skill Exchange Platform',
+    subtitle: 'Peer-to-Peer Developer Community Platform',
     description:
-      'A full-stack peer-to-peer skill exchange platform using Java Spring Boot and React. Built features for skill management, session scheduling, and secure JWT authentication. Engineered for efficient data flow and high scalability.',
-    tags: ['Java', 'Spring Boot', 'React', 'JWT', 'PostgreSQL'],
+      'A human-first P2P developer community that rejects corporate aesthetics for a unique Hand-Drawn Design System. Features an intent-based discovery engine, real-time messaging & sessions via SSE, GitHub OAuth skill verification with Radar Charts, AI-powered post enhancement, and a dynamic social feed — all built on Spring Boot, React, and PostgreSQL.',
+    tags: ['Java 21', 'Spring Boot', 'React', 'PostgreSQL', 'JWT', 'SSE', 'AI', 'Vite'],
     color: 'bg-neo-secondary',
     github: 'https://github.com/garvsurve/SkillSphere',
+    projectLink: 'https://skillsphere-network.vercel.app',
     demo: null,
     icon: <Layout size={40} className="text-neo-ink" />
   },
@@ -20,6 +21,7 @@ const PROJECTS = [
     tags: ['Spring Boot', 'JSoup', 'OpenPDF', 'AI Integration', 'React'],
     color: 'bg-neo-muted',
     github: 'https://github.com/garvsurve/AuditAble',
+    projectLink: 'https://auditable.vercel.app',
     demo: null,
     icon: <Code size={40} className="text-neo-ink" />
   },
@@ -81,21 +83,31 @@ export default function Projects() {
                 </div>
 
                 {/* Links */}
-                <div className="flex gap-4">
+                <div className="flex gap-4 flex-wrap">
                   <a 
                     href={project.github} 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="neo-btn bg-neo-ink text-neo-white px-6 py-3 flex items-center gap-2 text-sm flex-1 justify-center"
+                    className="neo-btn bg-neo-ink text-neo-white px-6 py-3 flex items-center gap-2 text-sm flex-1 justify-center min-w-[140px]"
                   >
                     <Github size={18} /> GITHUB
                   </a>
+                  {project.projectLink && (
+                    <a 
+                      href={project.projectLink} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="neo-btn bg-neo-white text-neo-ink border-2 border-black px-6 py-3 flex items-center gap-2 text-sm flex-1 justify-center min-w-[140px]"
+                    >
+                      <ExternalLink size={18} /> PROJECT
+                    </a>
+                  )}
                   {project.demo && (
                     <a 
                       href={project.demo} 
                       target="_blank" 
                       rel="noopener noreferrer"
-                      className="neo-btn bg-neo-white text-neo-ink px-6 py-3 flex items-center gap-2 text-sm flex-1 justify-center"
+                      className="neo-btn bg-neo-white text-neo-ink border-2 border-black px-6 py-3 flex items-center gap-2 text-sm flex-1 justify-center min-w-[140px]"
                     >
                       <ExternalLink size={18} /> LIVE DEMO
                     </a>
